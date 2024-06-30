@@ -1,19 +1,20 @@
 fx_version 'cerulean'
-name 'FiveM TypeScript Boilerplate'
-author 'Project Error'
 game 'gta5'
-
 lua54 'yes'
 
+shared_scripts {
+    '@ox_lib/init.lua'
+}
 
 
 server_scripts {
-    'dist/server/*.js',
-    'server/*.lua'
+    'server/server.lua',
+    'dist/server/sv_server.js',
 } 
 client_scripts {
-    'dist/client/*.js',
+    'dist/client/cl_client.js',
 } 
+
 
 
 
